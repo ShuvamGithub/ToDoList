@@ -1,0 +1,18 @@
+.button {
+    width: 15%;
+    min-width: 48px;
+    min-height: 48px; // min. mobile-friendly size (48,48).
+    color: $button-textcolor;
+    border: 2px solid $textbox-bordercolor;
+    border-radius: 10px;
+    outline: none; // if have hover & focus.
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    filter: brightness(125%);
+    box-shadow: 4px 2px 5px black;
+}

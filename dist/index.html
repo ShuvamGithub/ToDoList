@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.min.css">
+        <script src="../js/main.js" type="module"></script> <!-- type= module: if used multiple modules. -->
+    </head>
+    <body>
+        <main>
+            <section class="newItemEntry">
+                <form action id="itemEntryForm">
+                    <label for="newItem">Enter a new to do item</label>
+                    <input id="newItem" type="text" size="50" autocomplete="off"
+                        placeholder="Add Item" tabindex="0">
+                    <button id="addItem" class="button" title="Add new item"
+                        aria-label="Add new item to list"
+                        tabindex="0">+</button>
+                    <!-- title: mousehover, aria-lable: screenReader -->
+                </form>
+            </section>
+
+            <section class="listContainer">
+                <div class="listTitle">
+                    <h1 tabindex="0">To Do List</h1>
+                    <button id="clearItems" class="button" title="Clear the list"
+                        aria-label="Remove all items from the list"
+                        tabindex="0">Clear</button>
+                </div>
+                <hr>
+                <div id="listItems">
+                    <div class="item">
+                        <input type="checkbox" id="1" tabindex="0">
+                        <label for="1">Eat</label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="2" tabindex="0">
+                        <label for="2">Study</label>
+                    </div>
+                    
+                </div>
+
+                <p class="confirmation" id="confirmation" aria-live="assertive"></p>
+            </section>
+        </main>
+    </body>
+</html>
